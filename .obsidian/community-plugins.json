@@ -3,5 +3,6 @@
   "obsidian-tasks-plugin",
   "obsidian-kanban",
   "obsidian-zotero-desktop-connector",
-  "obsidian-pandoc-reference-list"
+  "obsidian-pandoc-reference-list",
+  "obsidian-tikzjax"
 ]
