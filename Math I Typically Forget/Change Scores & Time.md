@@ -1,9 +1,13 @@
-Client asks for a pre/post analysis with differential followup -- the time between initial and final scores was not the same across patients.
+Client asks for a pre/post analysis for a group of patients from a single exposure with differential followup -- the time between initial and final scores was not the same across patients.
 
 A simple paired analysis will then distort the reported mean.  If time is measured in months, $m$, then the paired estimate is
 
 $$ E[\hat \delta] = \sum_{m \in \mathcal{M}} E[\hat\delta \mid M=m] \times \Pr(M=m) $$
-and those patients who go a  long time between measurements could potentially up weight their contribution to the paired difference estimate.  Additionally, it may be the case that those subjects who are particularly bad at baseline may be treated longer, thereby going even longer between measurements.
+The consequence is that $E[\hat \delta]$ is an estimate at a point in time which may not be clinically relevant and is obscured from the a simple change score analysis.
+
+Those patients who go a  long time between measurements could potentially up weight their contribution to the paired difference estimate.  Additionally, it may be the case that those subjects who are particularly bad at baseline may be treated longer, thereby going even longer between measurements.
+
+
 
 What we want to do is report an estimate of $\hat \delta$ conditional on treatment time but also adjusting for baseline.  If $y$ is the final measurement, $x$ is the initial measurement, $\delta=y-x$ is the change score, and $m$ is the time between measurements, then we want to fit a model
 
