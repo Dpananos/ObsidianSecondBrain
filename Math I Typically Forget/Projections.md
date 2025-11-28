@@ -22,7 +22,7 @@ $$
 
 ## Orthogonal Projection onto a Subspace
 
-A single vector is itself a subspace of the vector space in which it is an element.  As such, it is reasonable to ask if the concept of vector projection can be extended to subspaces of dimension larger than one.
+The span of a single vector is a subspace of the vector space in which it is an element.  As such, it is reasonable to ask if the concept of vector projection can be extended to subspaces of dimension larger than one.
 
 The "orthogonal projection" of a vector $\mathbf{v}$ onto the subspace spanned by the basis $\left\{ \mathbf{u}_1, \cdots, \mathbf{u}_n \right\}$ is the vector $\mathbf{w} = \sum_k a_k \mathbf{u}_k$ such that $\left< \mathbf{v} - \mathbf{w}, \mathbf{u}_k\right>=0 \quad \forall k = 1, \cdots, n$.   The coordinates with respect to the basis are typically of interest since, given the coordinates, we can construct the orthogonal projection via linear combination.
 

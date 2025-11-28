@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b88db74220b6b309",
+            "id": "bc8e5f1020816e53",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math I Typically Forget/Projections.md",
+                "file": "Math I Typically Forget/Change Scores & Time.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Projections"
+              "title": "Change Scores & Time"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392.5026054382324
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "6d340deb33633af8",
@@ -179,13 +180,16 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "b88db74220b6b309",
+  "active": "bc8e5f1020816e53",
   "lastOpenFiles": [
-    "Math I Typically Forget/Frisch-Waugh-Lovell (FWL) and Fixed Effects.md",
+    "Math I Typically Forget/Change Scores & Time.md",
+    "Pasted image 20251127160843.png",
     "Math I Typically Forget/Projections.md",
+    "Math I Typically Forget/Frisch-Waugh-Lovell (FWL) and Fixed Effects.md",
+    "Math I Typically Forget/Cluster Robust Standard Errors.md",
+    "Math I Typically Forget/Why We Need Clustering.md",
     "create a link.md",
     "Welcome.md",
-    "Math I Typically Forget/Cluster Robust Standard Errors.md",
     "Math I Typically Forget/Robust Standard Errors.md",
     "Pasted image 20251123144806.png",
     "Deng's Linear Models/OLS with 1 Covariate.md",
@@ -195,7 +199,6 @@
     "Deng's Linear Models",
     "Untitled.canvas",
     "Untitled.base",
-    "Math I Typically Forget/Why We Need Clustering.md",
     "Math I Typically Forget/Ratio Metrics.md",
     "Math I Typically Forget/Percentile Metrics.md",
     "Math I Typically Forget/Statistics on Matrices and Vectors.md",
@@ -211,9 +214,6 @@
     "Untitled Kanban.md",
     "2025-09-18.md",
     "POEM/Ben Chinyee.md",
-    "POEM",
-    "Ben Chinyee.md",
-    "Kanban Stats Consulting.md",
-    "2025-09-07.md"
+    "POEM"
   ]
 }
