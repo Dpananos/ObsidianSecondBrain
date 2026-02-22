@@ -5,15 +5,15 @@ The $p^{th}$ percentile is the point $q$ such that $q = F^{-1}(p)$.  Here, $F(\c
 
 A percentile metric then seeks an estimate of the $p^{th}$ percentile, $\hat q$ , and the associated standard error (or confidence interval).  Given i.i.d. data $X_1 \leq X_2 \leq \cdots \leq X_n$ (sorted in ascending order so their index is also their rank), the $p^{th}$ percentile is estimated via $\hat q = X_{\lfloor np \rfloor}$.  The standard error for the percentile is provided by a Central Limit Theorem for percentiles, stating
 
-$$\sqrt{n}\left\{X_{\lfloor n p\rfloor}-q\right\} \rightarrow N\left[0, \frac{p(1-p)}{f\left\{q\right\}^2}\right]$$
-Note that the standard error involves an estimate of the probability density function evaluated at the true -- and unknown -- quantile.  Well...shit.  How can we get a standard error for the estimate $\hat q$ in light of this?
+$$\sqrt{n}\left\{X_{\lfloor n p\rfloor}-q\right\} \rightarrow N\left[0, \frac{\sigma^2)}{f\left\{q\right\}^2}\right]$$
+In the i.i.d. case $\sigma^2=p(1-p)$ . Note that the standard error involves an estimate of the probability density function evaluated at the true -- and unknown -- quantile.  Well...shit.  How can we get a standard error for the estimate $\hat q$ in light of this?
 
 The trick is to compute $Y_i = I(X_i \leq X_{\lfloor np \rfloor})$ and note that $S = \sum_i Y_i$ is binomial 
 
 $$ S \sim \operatorname{Binomial}(p;n) \>. $$
-We can estimate $\hat p = S/n$ and construct a Wald confidence interval for $\hat p$
+We can construct a  Wald confidence interval for $p$
 
-$$(L, U) =  \hat p \pm z_{1-\alpha/2} \dfrac{\sqrt{\hat p (1-\hat p)}}{n}$$
+$$(L, U) =   p \pm z_{1-\alpha/2} \dfrac{\sqrt{ p (1- p)}}{n}$$
 
 The points $(L, U)$ can be interpreted as ranks, which can be used to obtain a confidence interval for $\hat q$
 
@@ -304,7 +304,7 @@ if __name__ == "__main__":
 
 ## The Density Estimate Revisited
 
-Originally, I claimed that the asymptotic sampling distribution of the quantile satisfied
+In the i.i.d., I claimed that the asymptotic sampling distribution of the quantile satisfied
 
 $$\sqrt{n}\left\{X_{\lfloor n p\rfloor}-q\right\} \rightarrow N\left[0, \frac{p(1-p)}{f\left\{q\right\}^2}\right]$$
 
