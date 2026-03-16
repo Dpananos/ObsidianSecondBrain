@@ -4,93 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "ee2cc75b5e87a316",
+        "id": "575ff4f17c72d78c",
         "type": "tabs",
         "children": [
           {
-            "id": "830a95b4cfe3db71",
+            "id": "d8d8cc712187b3ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math I Typically Forget/Percentile Metrics.md",
+                "file": "Interesting Blog Posts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Percentile Metrics"
-            }
-          },
-          {
-            "id": "923bbc25ab360303",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.4"
-            }
-          },
-          {
-            "id": "4d61d0e4b2e9147f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math I Typically Forget/Robust Standard Errors.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Robust Standard Errors"
-            }
-          },
-          {
-            "id": "af8b2ce85f02d6dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math I Typically Forget/Working with a Normal Distribution.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Working with a Normal Distribution"
-            }
-          },
-          {
-            "id": "56ac78871dc0fcdf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math I Typically Forget/Percentile Metrics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Percentile Metrics"
-            }
-          },
-          {
-            "id": "78835b2e8525f96d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Math I Typically Forget/Projections.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Projections"
+              "title": "Interesting Blog Posts"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -147,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250.50260543823242
+    "width": 200
   },
   "right": {
     "id": "6d340deb33633af8",
@@ -249,27 +180,33 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "78835b2e8525f96d",
+  "active": "d8d8cc712187b3ff",
   "lastOpenFiles": [
-    "Test.md",
-    "Math I Typically Forget/Projections.md",
-    "Math I Typically Forget/Power for the Z Test.md",
+    "AI/SQL Interview Agent.md",
+    "Interesting Blog Posts.md",
+    "AB Testing Lecture.md",
+    "Tech I Typically Forget/AB Testing.md",
+    "Tech I Typically Forget/SQL.md",
+    "Welcome.md",
+    "Tech I Typically Forget",
+    "AI",
     "Math I Typically Forget/Percentile Metrics.md",
+    "Math I Typically Forget/Robust Standard Errors.md",
+    "Math I Typically Forget/Working with a Normal Distribution.md",
+    "Math I Typically Forget/Projections.md",
+    "Test.md",
+    "Math I Typically Forget/Power for the Z Test.md",
     "Math I Typically Forget/Frisch-Waugh-Lovell (FWL) and Fixed Effects.md",
     "Math I Typically Forget/Cluster Robust Standard Errors.md",
     "Math I Typically Forget/Change Scores & Time.md",
-    "AB Testing Lecture.md",
     "Pasted image 20260219184213.png",
-    "Math I Typically Forget/Robust Standard Errors.md",
     "Math I Typically Forget/Statistics on Matrices and Vectors.md",
     "Math I Typically Forget/Why We Need Clustering.md",
-    "Math I Typically Forget/Working with a Normal Distribution.md",
     "Invalid date.md",
     "Math I Typically Forget/Percentile Metrics CODE.md",
     "Math I Typically Forget/Ratio Metrics.md",
     "Pasted image 20251127160843.png",
     "create a link.md",
-    "Welcome.md",
     "Pasted image 20251123144806.png",
     "Deng's Linear Models/OLS with 1 Covariate.md",
     "Pasted image 20251123152448.png",
@@ -282,10 +219,6 @@
     "2025-10-16.md",
     "Math I Typically Forget",
     "POEM API.md",
-    "Ramit App.md",
-    "POEM/Clemens -- Parathyroidectomy.md",
-    "POEM/Ben Chinyee -- PV SE.md",
-    "POEM/POEM Work.md",
     "POEM"
   ]
 }
