@@ -1,0 +1,11 @@
+* [Magnet](https://magnet.crowdcafe.com/)
+* [Hidden Bar](https://apps.apple.com/us/app/hidden-bar/id1452453066)
+* [Dropover](https://dropoverapp.com/)
+* [Espanso](https://espanso.org/)
+* [Raycast](https://manual.raycast.com/)
+* [Shottr](https://shottr.cc/)
+* [Antinote](https://antinote.io/)
+* [Fluxmarkdown](https://github.com/xykong/flux-markdown)
+* [DockDoor](https://dockdoor.net/)
+* [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704)
+
