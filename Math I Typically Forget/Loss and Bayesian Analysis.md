@@ -47,18 +47,41 @@ Here, we have made judicious use of the fact that $\varphi$ is an even function.
 
 Let $a^\star(\theta)$ be the action we would take if we knew $\theta$.
 
-$$a^\star (\theta) = \begin{cases} 1 & \theta>0 \\ 0 & \theta \lt 0 \end{cases} $$
+$$
+a^\star(\theta)
+=\left\lbrace
+\begin{array}{ll}
+1, & \theta>0, \\
+0, & \theta<0.
+\end{array}
+\right.
+$$
 
 The loss would then be
 
-$$ \mathcal{L}(\theta, a^\star(\theta)) = \underset{a}{\min} \left\lbrace \mathcal{L}(\theta, a) \right\rbrace = 0 $$
+$$
+\mathcal{L}(\theta,a^\star(\theta))
+=\min_a \left\lbrace \mathcal{L}(\theta,a) \right\rbrace
+=0
+$$
 
-We don't know $\theta$, so we choose the action which minimizes the expected loss loss
+We don't know $\theta$, so we choose the action that minimizes the expected loss.
 
-$$ \mathcal{L}^\star =  \min \left\lbrace E_\theta[\mathcal{L}(\theta, 1)], E_\theta[\mathcal{L}(\theta, 0)] \right\rbrace$$
+$$
+\mathcal{L}^\star
+=\min \left\lbrace
+E_\theta[\mathcal{L}(\theta,1)],
+E_\theta[\mathcal{L}(\theta,0)]
+\right\rbrace
+$$
 
-The EVPI is 
-$$ EVPI = \mathcal{L}^\star - E_\theta[\mathcal{L}(\theta, a^\star)] = \mathcal{L}^\star - 0 $$
+The EVPI is
+
+$$
+\mathrm{EVPI}
+=\mathcal{L}^\star-E_\theta[\mathcal{L}(\theta,a^\star)]
+=\mathcal{L}^\star-0
+$$
 
 so in this case, the EVPI is just the smallest expected loss.
 
