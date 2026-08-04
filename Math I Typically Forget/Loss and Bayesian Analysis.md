@@ -2,44 +2,87 @@
 ## The Posterior
 Consider the following Bayesian model
 
-$$ \hat \theta \vert \theta \sim \mathrm{Normal}(\theta, s^2) $$
-$$  \theta \sim \mathrm{Normal}(\mu, \tau^2) $$
+$$
+\hat\theta \mid \theta \sim \mathrm{Normal}(\theta,s^2)
+$$
+
+$$
+\theta \sim \mathrm{Normal}(\mu,\tau^2)
+$$
+
 If we assume $s$ is known, we can do inference on $\theta$ to obtain the posterior mean and variance as
 
-$$ m = v^2 \left(\dfrac{\hat \theta}{s^2} + \dfrac{\mu}{\tau^2}\right) $$
-$$ v^2 = \left(\dfrac{1}{s^2} + \dfrac{1}{\tau^2}\right)^{-1} $$
+$$
+m=v^2\left(\dfrac{\hat\theta}{s^2}+\dfrac{\mu}{\tau^2}\right)
+$$
+
+$$
+v^2=\left(\dfrac{1}{s^2}+\dfrac{1}{\tau^2}\right)^{-1}
+$$
 
 ## Loss and Expected Loss
 
 Let $a = \left\lbrace 0, 1\right\rbrace$ denote the action of shipping control ($a=0$) or treatment ($a=1$).  The loss associated with each is
 
-$$ \mathcal{L}(\theta, 0) = \max \left\lbrace 0, \theta \right\rbrace $$
-$$ \mathcal{L}(\theta, 1) = \max \left\lbrace 0, -\theta \right\rbrace $$
+$$
+\mathcal{L}(\theta,0)=\max \left\lbrace 0,\theta \right\rbrace
+$$
+
+$$
+\mathcal{L}(\theta,1)=\max \left\lbrace 0,-\theta \right\rbrace
+$$
+
 or
 
-$$ \mathcal{L}(\theta, a) = \max \left\lbrace 0, (1-2a)\theta \right\rbrace   $$
+$$
+\mathcal{L}(\theta,a)=\max \left\lbrace 0,(1-2a)\theta \right\rbrace
+$$
 
 The expected loss for each decision is
 
-$$ E_\theta[\mathcal{L}(\theta, 0)] = E[\theta \mid \theta>0, \hat \theta]\Pr(\theta>0 \mid \hat \theta) $$
+$$
+E_\theta[\mathcal{L}(\theta,0)]
+=E[\theta \mid \theta>0,\hat\theta]\Pr(\theta>0 \mid \hat\theta)
+$$
 
 Note that 
 
-$$ \Pr(\theta>0 \mid \hat \theta) = 1 -\Phi\left(\dfrac{-m}{v}\right) = \Phi\left(\dfrac{m}{v}\right) $$
+$$
+\Pr(\theta>0 \mid \hat\theta)
+=1-\Phi\left(\dfrac{-m}{v}\right)
+=\Phi\left(\dfrac{m}{v}\right)
+$$
+
 and that the expectation above can be obtained from a truncated normal
 
-$$ E[\theta \mid \theta>0, \hat \theta] = m + v \dfrac{\varphi(m/v)}{\Phi(m/v)} $$
+$$
+E[\theta \mid \theta>0,\hat\theta]
+=m+v\dfrac{\varphi(m/v)}{\Phi(m/v)}
+$$
 
 Therefore, the expected loss is
 
-$$ E_\theta[\mathcal{L}(\theta, 0)] = \Phi(m/v) m + v \varphi(m/v) $$
+$$
+E_\theta[\mathcal{L}(\theta,0)]
+=m\Phi(m/v)+v\varphi(m/v)
+$$
+
 A similar calculation can be performed to calculate the expected loss for shipping treatment
 
-$$ \Pr(\theta \lt 0 \mid \hat \theta) = \Phi\left(\dfrac{-m}{v}\right) $$
+$$
+\Pr(\theta<0 \mid \hat\theta)
+=\Phi\left(\dfrac{-m}{v}\right)
+$$
 
-$$ E[\theta \mid \theta\lt 0, \hat \theta] = m - v \dfrac{\varphi(m/v)}{\Phi(-m/v)} $$
+$$
+E[\theta \mid \theta<0,\hat\theta]
+=m-v\dfrac{\varphi(m/v)}{\Phi(-m/v)}
+$$
 
-$$ E_\theta[\mathcal{L}(\theta, 1)] = -\Phi(-m/v) m + v \varphi(m/v) $$
+$$
+E_\theta[\mathcal{L}(\theta,1)]
+=-m\Phi(-m/v)+v\varphi(m/v)
+$$
 
 Here, we have made judicious use of the fact that $\varphi$ is an even function.
 
@@ -89,12 +132,16 @@ so in this case, the EVPI is just the smallest expected loss.
 
 Suppose we have observed $\hat\theta$, so that
 
-$$ \theta\mid\hat\theta\sim\mathrm{Normal}(m,v^2), $$
+$$
+\theta\mid\hat\theta\sim\mathrm{Normal}(m,v^2)
+$$
 
 and are considering collecting an additional, independent estimate $\hat\theta_{\text{new}}$ satisfying
 
-$$ \hat\theta_{\text{new}}\mid\theta
-\sim\mathrm{Normal}(\theta,s_{\text{new}}^2). $$
+$$
+\hat\theta_{\text{new}}\mid\theta
+\sim\mathrm{Normal}(\theta,s_{\text{new}}^2)
+$$
 
 After observing $\hat\theta_{\text{new}}$, the new posterior variance and mean will be
 
@@ -271,7 +318,9 @@ $$
 
 Because $M\mid\hat\theta\sim\mathrm{Normal}(m,w^2)$,
 
-$$ E_{M\mid\hat\theta}[|M|]=g(m,w). $$
+$$
+E_{M\mid\hat\theta}[|M|]=g(m,w)
+$$
 
 Therefore,
 
