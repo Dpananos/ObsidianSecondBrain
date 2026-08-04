@@ -11,13 +11,13 @@ $$ v^2 = \left(\dfrac{1}{s^2} + \dfrac{1}{\tau^2}\right)^{-1} $$
 
 ## Loss and Expected Loss
 
-Let $a = \left\{ 0, 1\right\}$ denote the action of shipping control ($a=0$) or treatment ($a=1$).  The loss associated with each is
+Let $a = \left\lbrace 0, 1\right\rbrace$ denote the action of shipping control ($a=0$) or treatment ($a=1$).  The loss associated with each is
 
-$$ \mathcal{L}(\theta, 0) = \max \left\{ 0, \theta \right\} $$
-$$ \mathcal{L}(\theta, 1) = \max \left\{ 0, -\theta \right\} $$
+$$ \mathcal{L}(\theta, 0) = \max \left\lbrace 0, \theta \right\rbrace $$
+$$ \mathcal{L}(\theta, 1) = \max \left\lbrace 0, -\theta \right\rbrace $$
 or
 
-$$ \mathcal{L}(\theta, a) = \max \left\{ 0, (1-2a)\theta \right\}   $$
+$$ \mathcal{L}(\theta, a) = \max \left\lbrace 0, (1-2a)\theta \right\rbrace   $$
 
 The expected loss for each decision is
 
@@ -51,11 +51,11 @@ $$a^\star (\theta) = \begin{cases} 1 & \theta>0 \\ 0 & \theta \lt 0 \end{cases} 
 
 The loss would then be
 
-$$ \mathcal{L}(\theta, a^\star(\theta)) = \underset{a}{\min} \left\{ \mathcal{L}(\theta, a) \right\} = 0 $$
+$$ \mathcal{L}(\theta, a^\star(\theta)) = \underset{a}{\min} \left\lbrace \mathcal{L}(\theta, a) \right\rbrace = 0 $$
 
 We don't know $\theta$, so we choose the action which minimizes the expected loss loss
 
-$$ \mathcal{L}^\star =  \min \left\{ E_\theta[\mathcal{L}(\theta, 1)], E_\theta[\mathcal{L}(\theta, 0)] \right\}$$
+$$ \mathcal{L}^\star =  \min \left\lbrace E_\theta[\mathcal{L}(\theta, 1)], E_\theta[\mathcal{L}(\theta, 0)] \right\rbrace$$
 
 The EVPI is 
 $$ EVPI = \mathcal{L}^\star - E_\theta[\mathcal{L}(\theta, a^\star)] = \mathcal{L}^\star - 0 $$
@@ -214,7 +214,7 @@ where
 $$
 g(x,\sigma)
 =2\sigma\varphi(x/\sigma)
-+x\left\{2\Phi(x/\sigma)-1\right\}.
++x\left\lbrace2\Phi(x/\sigma)-1\right\rbrace.
 $$
 
 Using $x_+=(|x|+x)/2$ and $(-x)_+=(|x|-x)/2$, the optimal expected loss under
