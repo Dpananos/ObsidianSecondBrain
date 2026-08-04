@@ -8,20 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "564223045e654627",
+            "id": "1f3a088e6eec8c6b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math I Typically Forget/Outer Product.md",
+                "file": "Math I Typically Forget/Working with a Normal Distribution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Outer Product"
+              "title": "Working with a Normal Distribution"
+            }
+          },
+          {
+            "id": "c8c9e544b9b837d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Math I Typically Forget/Loss and Bayesian Analysis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Loss and Bayesian Analysis"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -78,7 +95,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 305.5026054382324,
+    "collapsed": true
   },
   "right": {
     "id": "6d340deb33633af8",
@@ -180,47 +198,54 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "564223045e654627",
+  "active": "c8c9e544b9b837d5",
   "lastOpenFiles": [
-    "Math I Typically Forget/Projections.md",
+    "Math I Typically Forget/Working with a Normal Distribution.md",
+    "Math I Typically Forget/Loss and Bayesian Analysis.md",
+    "Math I Typically Forget/Group Sequential Assumptions.md",
+    "Student's T as a Mixture of Normals.md",
+    "Saved For Later/Interesting Blog Posts.md",
+    "Saved For Later/Apps I Like.md",
+    "Tinyplot.md",
+    "email.md",
+    "Untitled.base",
+    "Math I Typically Forget/Mediation.md",
+    "Math I Typically Forget/Statistics on Matrices and Vectors.md",
+    "Math I Typically Forget/Why We Need Clustering.md",
+    "POEM.md",
+    "POEM_CRM_PRD.md",
+    "poem-wireframes/~$EM_CRM_wireframes.docx",
+    "poem-wireframes/POEM_CRM_wireframes_files/mediabag",
+    "poem-wireframes/POEM_CRM_wireframes_files",
+    "poem-wireframes/POEM_CRM_wireframes.docx",
+    "poem-wireframes/POEM_CRM_wireframes.qmd",
+    "poem-wireframes/img/10-analytics.png",
+    "poem-wireframes/img/09-active-projects.png",
+    "poem-wireframes/img/08-member-project.png",
+    "poem-wireframes/img/07-log-time.png",
+    "poem-wireframes/img/06-statistician-projects.png",
+    "poem-wireframes/img/05-admin-assign.png",
+    "poem-wireframes/img/04-admin-triage.png",
+    "poem-wireframes/img/03-member-dashboard.png",
+    "poem-wireframes/img/02-request-form.png",
+    "poem-wireframes/img/01-login.png",
+    "poem-wireframes/screens/wireframe.css",
+    "poem-wireframes/screens/10-analytics.html",
+    "poem-wireframes/screens/09-active-projects.html",
+    "poem-wireframes/screens/08-member-project.html",
+    "Math I Typically Forget/Sequential Testing.md",
+    "Sequential Testing.md",
+    "pee.md",
+    "plannotator/Clipboard History Menu Bar App — Plan - May 15, 2026 11-56pm.md",
     "Math I Typically Forget/Outer Product.md",
+    "- Has been very valuable to work here over last 8 years..md",
+    "Math I Typically Forget/Projections.md",
     "Math I Typically Forget/Ratio Metrics.md",
     "Math I Typically Forget/Robust Standard Errors.md",
     "Math I Typically Forget/Frisch-Waugh-Lovell (FWL) and Fixed Effects.md",
     "Math I Typically Forget/Cluster Robust Standard Errors.md",
     "Math I Typically Forget/Change Scores & Time.md",
-    "Untitled.base",
     "Need to Automate.md",
-    "Restructure Service Model.md",
-    "POEM Statistical Support Processes.md",
-    "Saved For Later/Interesting Blog Posts.md",
-    "plannotator/Add Discrimination & Calibration Tables to report. - Apr 16, 2026 5-42pm.md",
-    "Saved For Later/Apps I Like.md",
-    "Untitled 1.md",
-    "plannotator/Statistical Consulting Hour-Tracking API — Impleme - May 2, 2026 5-41pm.md",
-    "Decision Theory.md",
-    "().md",
-    "plannotator/Refactor one pipeline per model variant + push com - Apr 28, 2026 5-54pm.md",
-    "Determine Frank Harrell's advice in imputing missing y x.md",
-    "Determine Frank Harrell's advice in imputing missing y.md",
-    "Decision Theory and AB Testing.md",
-    "Test Plan.md",
-    "plannotator/Context - Apr 14, 2026 1-55am.md",
-    "plannotator",
-    "Math I Typically Forget/Power for the Z Test.md",
-    "2026-04-11.md",
-    "Math I Typically Forget/Working with a Normal Distribution.md",
-    "Saved For Later",
-    "Tech I Typically Forget",
-    "AI",
-    "Pasted image 20260219184213.png",
-    "Pasted image 20251127160843.png",
-    "Pasted image 20251123144806.png",
-    "Pasted image 20251123152448.png",
-    "Pasted image 20251123152434.png",
-    "Deng's Linear Models",
-    "Untitled.canvas",
-    "Math I Typically Forget",
-    "POEM"
+    "Untitled.canvas"
   ]
 }

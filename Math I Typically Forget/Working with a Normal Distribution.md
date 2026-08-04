@@ -7,3 +7,4 @@ Let $\phi(x)$ denote the density function for a standard normal random variable,
 
 			$$ f(x) = \dfrac{1}{\sqrt{2\pi} \sigma} \exp\left(\dfrac{-(x-\mu)^2}{2\sigma^2}\right) $$
 2) If $Z \sim \mathcal{N}(\mu, \sigma)$ then $(Z - \mu) / \sigma \sim \mathcal{N}(0, 1)$.  This procedure is said to be standardizing $Z$ -- that is transforming the random variable such that the density of the transformed variable is now standard normal.
+
