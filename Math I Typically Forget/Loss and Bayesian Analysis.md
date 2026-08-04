@@ -2,8 +2,8 @@
 ## The Posterior
 Consider the following Bayesian model
 
-$$ \hat \theta \vert \theta \sim \operatorname{Normal}(\theta, s^2) $$
-$$  \theta \sim \operatorname{Normal}(\mu, \tau^2) $$
+$$ \hat \theta \vert \theta \sim \mathrm{Normal}(\theta, s^2) $$
+$$  \theta \sim \mathrm{Normal}(\mu, \tau^2) $$
 If we assume $s$ is known, we can do inference on $\theta$ to obtain the posterior mean and variance as
 
 $$ m = v^2 \left(\dfrac{\hat \theta}{s^2} + \dfrac{\mu}{\tau^2}\right) $$
@@ -66,12 +66,12 @@ so in this case, the EVPI is just the smallest expected loss.
 
 Suppose we have observed $\hat\theta$, so that
 
-$$ \theta\mid\hat\theta\sim\operatorname{Normal}(m,v^2), $$
+$$ \theta\mid\hat\theta\sim\mathrm{Normal}(m,v^2), $$
 
 and are considering collecting an additional, independent estimate $\hat\theta_{\text{new}}$ satisfying
 
 $$ \hat\theta_{\text{new}}\mid\theta
-\sim\operatorname{Normal}(\theta,s_{\text{new}}^2). $$
+\sim\mathrm{Normal}(\theta,s_{\text{new}}^2). $$
 
 After observing $\hat\theta_{\text{new}}$, the new posterior variance and mean will be
 
@@ -97,7 +97,7 @@ the new estimate is
 
 $$
 \hat\theta_{\text{new}}\mid\hat\theta
-\sim\operatorname{Normal}(m,v^2+s_{\text{new}}^2).
+\sim\mathrm{Normal}(m,v^2+s_{\text{new}}^2).
 $$
 
 To derive the distribution of $M$, first define the weight placed on the new
@@ -138,8 +138,8 @@ and its preposterior variance is
 
 $$
 \begin{aligned}
-\operatorname{Var}(M\mid\hat\theta)
-&=K^2\operatorname{Var}(\hat\theta_{\text{new}}\mid\hat\theta)\\
+\mathrm{Var}(M\mid\hat\theta)
+&=K^2\mathrm{Var}(\hat\theta_{\text{new}}\mid\hat\theta)\\
 &=K^2(v^2+s_{\text{new}}^2)\\
 &=\dfrac{v^4}{v^2+s_{\text{new}}^2}.
 \end{aligned}
@@ -159,7 +159,7 @@ Therefore,
 
 $$
 M\mid\hat\theta
-\sim\operatorname{Normal}(m,w^2),
+\sim\mathrm{Normal}(m,w^2),
 \qquad
 w^2=v^2-v_{\text{new}}^2.
 $$
@@ -169,16 +169,16 @@ variance:
 
 $$
 \begin{aligned}
-\operatorname{Var}(\theta\mid\hat\theta)
+\mathrm{Var}(\theta\mid\hat\theta)
 &=E\left[
-\operatorname{Var}(\theta\mid\hat\theta,\hat\theta_{\text{new}})
+\mathrm{Var}(\theta\mid\hat\theta,\hat\theta_{\text{new}})
 \mid\hat\theta
 \right]\\
-&\quad+\operatorname{Var}\left(
+&\quad+\mathrm{Var}\left(
 E[\theta\mid\hat\theta,\hat\theta_{\text{new}}]
 \mid\hat\theta
 \right)\\
-&=v_{\text{new}}^2+\operatorname{Var}(M\mid\hat\theta).
+&=v_{\text{new}}^2+\mathrm{Var}(M\mid\hat\theta).
 \end{aligned}
 $$
 
@@ -190,7 +190,7 @@ expected loss. Thus, the expected value of sample information is the reduction
 in optimal expected loss:
 
 $$
-\operatorname{EVSI}
+\mathrm{EVSI}
 =\mathcal{L}^\star
 -E_{\hat\theta_{\text{new}}\mid\hat\theta}
 \left[
@@ -206,7 +206,7 @@ $$
 g(x,\sigma)
 =E[|X|],
 \qquad
-X\sim\operatorname{Normal}(x,\sigma^2),
+X\sim\mathrm{Normal}(x,\sigma^2),
 $$
 
 where
@@ -218,7 +218,7 @@ g(x,\sigma)
 $$
 
 Using $x_+=(|x|+x)/2$ and $(-x)_+=(|x|-x)/2$, the optimal expected loss under
-a $\operatorname{Normal}(x,\sigma^2)$ posterior is
+a $\mathrm{Normal}(x,\sigma^2)$ posterior is
 
 $$
 \min_a E[\mathcal{L}(\theta,a)]
@@ -246,7 +246,7 @@ E_{M\mid\hat\theta}[g(M,v_{\text{new}})]
 =g(m,v).
 $$
 
-Because $M\mid\hat\theta\sim\operatorname{Normal}(m,w^2)$,
+Because $M\mid\hat\theta\sim\mathrm{Normal}(m,w^2)$,
 
 $$ E_{M\mid\hat\theta}[|M|]=g(m,w). $$
 
@@ -254,7 +254,7 @@ Therefore,
 
 $$
 \boxed{
-\operatorname{EVSI}
+\mathrm{EVSI}
 =\dfrac{g(m,w)-|m|}{2}
 },
 \qquad
@@ -263,6 +263,6 @@ $$
 
 This expression has the expected limiting behavior. If the new sample contains
 no information, then $v_{\text{new}}^2\to v^2$, $w\to0$, and
-$\operatorname{EVSI}\to0$. If the new sample reveals $\theta$ perfectly, then
+$\mathrm{EVSI}\to0$. If the new sample reveals $\theta$ perfectly, then
 $v_{\text{new}}^2\to0$, $w\to v$, and
-$\operatorname{EVSI}\to\operatorname{EVPI}$.
+$\mathrm{EVSI}\to\mathrm{EVPI}$.
